@@ -129,6 +129,18 @@ header.shadow{
     color: var(--main-color);
     margin: 0.5rem 0 1.4rem;
 }
+.home-img img{
+    width: 25vw;
+    animation: float 3s linear infinite;
+}
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-3.5rem);
+    }
+}
 .btn{
     padding: 10px 40px;
     border-radius: 0.3rem;
@@ -410,4 +422,71 @@ header.shadow{
         font-size: 1rem;
     }
 }
-
+.hours li{ 
+    color: var(--bg-color);
+    padding: 10px;
+}
+.hours p{
+    color: var(--main-color);
+    padding: 10px;
+}
+.contactt {
+    padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contactt h2{
+    font-weight: bold;
+    font-size: 42px;
+    padding-bottom: 1rem;
+}
+.contact-form h3 {
+    color: var(--main-color);
+    padding-bottom: 1rem;
+}
+.name, .email, .message {
+    display: flex; 
+    font-size: 18px;
+}
+.contactt input, textarea {
+    width: 40rem; 
+    margin-bottom: 22px;
+    padding: 15px;
+    border: 1.5px solid var(--main-color);
+    border-radius: 12px;
+} 
+textarea {
+    padding-bottom: 50px;
+} 
+@media(max-width: 800px) {
+    .contact input, textarea {
+        width: 25rem; 
+    }
+}
+.btn2 {
+    color: white;
+    background-color: var(--main-color);
+    border: 2.5px solid var(--second-color);
+    border: none;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 40px;
+ &:hover {
+    background-color: var(--bg-color);
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: .4s;
+    transform: scale(1.01);
+}}
+.map-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+iframe{
+    width: 80%;
+    height: 40rem;
+}
