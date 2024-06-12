@@ -464,7 +464,7 @@ textarea {
         width: 25rem; 
     }
 }
-.btn2 {
+.btnn {
     color: white;
     background-color: var(--main-color);
     border: 2.5px solid var(--second-color);
@@ -472,14 +472,15 @@ textarea {
     font-weight: bold;
     padding: 15px 30px;
     border-radius: 40px;
- &:hover {
+}
+.btnn:hover {
     background-color: var(--bg-color);
     color: white;
     cursor: pointer;
     border: none;
     transition: .4s;
     transform: scale(1.01);
-}}
+}
 .map-container {
     width: 100%;
     display: flex;
