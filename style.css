@@ -44,7 +44,7 @@ header.shadow{
     box-shadow: var(--box-shadow);
 }
 .logo img{
-    width: 60px;
+    width: 100px;
 }
 .navbar{
     display: flex;
@@ -57,7 +57,7 @@ header.shadow{
     font-weight: 500;
 }
 .navbar a:hover{
-    background: var(--bg-color);
+    background: #f1f1f1;
     border-radius: 0.2rem;
     transition: 0.2s all linear;
 }
@@ -102,6 +102,7 @@ header.shadow{
     font-size: 1rem;
     color: var(--main-color);
 }
+
 .search-box input::placeholder{
     font-size: 1rem;
     font-weight: 500;
@@ -334,6 +335,12 @@ header.shadow{
     text-align: center;
     background: var(--main-color);
 }
+.copyright p{
+    color: var(--bg-color);
+}
+.copyright p span{
+    color: var(--text-color);
+}
 @media (max-width: 1058px){
     header{
         padding: 16px 60px;
@@ -377,12 +384,12 @@ header.shadow{
         text-align: center;
     }
     .navbar a{
-        color: var(--text-color);
-    }
-    .navbar a:hover{
         color: var(--bg-color);
     }
-    .navbar .active{
+    .navbar a:hover{
+        color: var(--text-color);
+    }
+    .navbar.active{
         top: 100%;
     }
     .about{
